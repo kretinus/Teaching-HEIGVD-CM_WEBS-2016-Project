@@ -1,0 +1,45 @@
+{
+  "name": "Citizen",
+  "plural": "Citizens",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "isStaff": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "comments": {
+      "type": "hasMany",
+      "model": "Comment",
+      "foreignKey": ""
+    },
+    "issues": {
+      "type": "hasMany",
+      "model": "Issue",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Issue",
+  "plural": "Issues",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "geoInfo": {
+      "type": "geopoint",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "citizen": {
+      "type": "belongsTo",
+      "model": "Citizen",
+      "foreignKey": ""
+    },
+    "categories": {
+      "type": "hasOne",
+      "model": "Category",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

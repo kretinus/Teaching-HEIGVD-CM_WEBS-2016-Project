@@ -1,0 +1,37 @@
+{
+  "name": "Action",
+  "plural": "Actions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "input": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "citizen": {
+      "type": "belongsTo",
+      "model": "Citizen",
+      "foreignKey": ""
+    },
+    "issue": {
+      "type": "belongsTo",
+      "model": "Issue",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,10 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "IfluxDB": {
+    "name": "IfluxDB",
+    "connector": "mongodb"
+  }
+}

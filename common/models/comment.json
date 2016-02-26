@@ -1,0 +1,34 @@
+{
+  "name": "Comment",
+  "plural": "Comments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "citizen": {
+      "type": "belongsTo",
+      "model": "Citizen",
+      "foreignKey": ""
+    },
+    "issue": {
+      "type": "belongsTo",
+      "model": "Issue",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
