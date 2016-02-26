@@ -6,6 +6,7 @@ module.exports = function (Issue) {
     
     Issue.toto = function (cb) {
         var issueCollection = Issue.getDataSource().connector.collection(Issue.modelName);
+        //var Citizen = app.models.Citizen; A VOIR
         issueCollection.aggregate({
             $match: {}
         },
@@ -17,6 +18,7 @@ module.exports = function (Issue) {
                 {$sort: {Total_issues:-1}},
                 //{$skip: 0},
                 //{$limit: 1},
+              
                 
             function(err, total_toto){
                 cb(null, total_toto);
@@ -41,15 +43,13 @@ module.exports = function (Issue) {
    var old_citizenID = ctx.currentInstance.citizenId;
    var issueID = ctx.currentInstance.id;
    var old_data = [old_status, old_date, old_citizenID, issueID];
-   console.log("---          ----");
+   console.log("---SHOW DATA TO ARCHIVE IN ACTION----");
    console.log(old_data);   
   
    
    var Action = app.models.Action; 
-   //Issue.app.model.Action.Create({type: ctx.currentInstance.status});
-   Action.create({status: old_status});
-   // Action.create({status: old_status, date: old_date, citizenID: old_citizenID, issueID: issueID});
-      
+   Action.create({status: old_status, date: old_date, citizenID: old_citizenID,issueID: issueID});
+ 
    next();
  
              }

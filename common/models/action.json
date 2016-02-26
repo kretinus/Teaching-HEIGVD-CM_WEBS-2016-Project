@@ -12,18 +12,15 @@
       "required": true
     },
     "date": {
-      "type": "date",
-      "required": true
+      "type": "date"
     },
     "citizenID": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "issueID": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
-  },   
+  },
   
   "acls": [],
   "methods": {}
