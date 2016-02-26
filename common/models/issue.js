@@ -1,7 +1,7 @@
 module.exports = function (Issue) {
-  
+  var app = require('../../server/server');  
 
-    Issue.validatesInclusionOf('status', { in: ['created', 'acknowledged', 'assigned', 'in_progress', 'solved, rejected'] });
+    Issue.validatesInclusionOf('status', { in: ['created', 'acknowledged', 'assigned', 'in_progress', 'solved', 'rejected'] });
     
     Issue.toto = function (cb) {
         var issueCollection = Issue.getDataSource().connector.collection(Issue.modelName);
@@ -29,4 +29,11 @@ module.exports = function (Issue) {
             returns: { arg: 'toto', type: 'string' }
         }
         );
+        
+          Issue.observe('before save', function(ctx, next) {
+               console.log(ctx.data);
+               console.log(ctx.currentInstance);
+  next();
+
+});
 };
