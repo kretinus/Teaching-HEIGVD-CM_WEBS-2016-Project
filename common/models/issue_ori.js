@@ -6,15 +6,15 @@ module.exports = function (Issue) {
     
     Issue.toto = function (cb) {
         var issueCollection = Issue.getDataSource().connector.collection(Issue.modelName);
-        var Citizen = app.models.Citizen; 
+        //var Citizen = app.models.Citizen; A VOIR
         issueCollection.aggregate({
             $match: {}
         },
             {
                 $group: {
-                    _id: { issue_ID: "$id", citizenID: Citizen.find({"filter":{"where": {"id": "$citizenId"}}}),
+                    _id: { issue_ID: "$id", citizenID: "$citizenId" },
                     Total_issues: { $sum: 1 },                                    
-                }}},
+                }},
                 {$sort: {Total_issues:-1}},
                 //{$skip: 0},
                 //{$limit: 1},
@@ -25,7 +25,6 @@ module.exports = function (Issue) {
             }
            );
     };
-    
     Issue.remoteMethod(
         'toto',
         {
