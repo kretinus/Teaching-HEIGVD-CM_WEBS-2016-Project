@@ -19,10 +19,12 @@ To run our projet, you need
 
 * Nodes.js 
 * npm Package manager
-* Checkout the source: `git clone git://github.com/echonest/pyechonest.git` and install it yourself.
+* Strongloop
+* Projet source: `git clone git://github.com/kretinus/Teaching-HEIGVD-CM_WEBS-2016-Project.git`
    
 ## Getting Started
-* Install Pyechonest
+* Install StrongLoop
+* `$ npm install -g strongloop`
 * **Get an API key** - to use the Echo Nest API you need an Echo Nest API key.  You can get one for free at [developer.echonest.com](http://developer.echonest.com).
 * **Set the API** key - you can do this one of two ways:
 * set an environment variable named `ECHO_NEST_API_KEY` to your API key
