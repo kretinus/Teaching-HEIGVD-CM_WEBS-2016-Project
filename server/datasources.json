@@ -5,6 +5,7 @@
   },
   "IfluxDB": {
     "name": "IfluxDB",
+    
     "connector": "mongodb"
   }
 }
