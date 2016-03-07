@@ -32,11 +32,15 @@ Web server listening at: http://0.0.0.0:3000/
 
 Here you'll see how to perform several queries.
 
-
 * Get the list of issues raised by a particular user.
+`http://127.0.0.1:3000/api/Citizens/{id}/issues`
 * Get the list of issues of a certain type.
+'http://127.0.0.1:3000/api/Issues?filter[where][category]=graffiti'
 * Get the list of issues in a particular region.
+'http://127.0.0.1:3000/api/issues?filter[where][geoInfo][near]=lat,lng&filter[limit]=5'
+** Use the limit filter to retrieve only the 5 first results**
 * Get the list of issues solved between two dates.
+'http://127.0.0.1:3000/api/Issues?filter[where][date][between][0]=YYYY-MM-DDT00:00:00.000Z&filter[where][date][between][1]=YYYY-MM-DD&filter[where][status]=solved'
 * Get the list of issues created between two dates that are still unresolved.
 * Get the history of an issue (list of actions taken on the issue).
 * Get the list of users who have created most issues.
