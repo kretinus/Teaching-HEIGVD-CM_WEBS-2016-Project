@@ -26,9 +26,7 @@ This will install the LoopBack framework, the slc command-line and various tools
 * Configure MongoDB as datasource, use the loopback datasource generator that will write the settings in `/server/datasources.json` for you `$ slc loopback:datasource DB_name`
 * To run the app just hit `	$ slc run` or `	$ node .` if everthing went fine you should get this
 Browse your REST API at http://0.0.0.0:3000/explorer
-Web server listening at: http://0.0.0.0:3000/```
-
-
+Web server listening at: http://0.0.0.0:3000/
 
 ## Examples
 
