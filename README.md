@@ -52,3 +52,15 @@ Or any other issue ID
 `http://127.0.0.1:3000/api/Issues/statSolve`
 * Get the list of users who have the least assigned issues not yet solved or rejected.
 `http://127.0.0.1:3000/api/Issues/statLeastAssigned`
+
+### Pagination
+
+Loopback handle the pagination for standard route, juste use the `skip` and `limit` filter
+`http://127.0.0.1:3000/api/Issues?filter[limit]=10&filter[skip]=0
+http://127.0.0.1:3000/api/Issues?filter[limit]=10&filter[skip]=10
+http://127.0.0.1:3000/api/Issues?filter[limit]=10&filter[skip]=20`
+
+For custom route you need to add the `skip` and `limit` filter directly in the controller, like for `issue.js`
+`{$skip: 0},
+{$limit: 3}`
+
