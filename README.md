@@ -20,10 +20,10 @@ To run our projet, you need
    
 ## Getting Started
 * Install StrongLoop `$ npm install -g strongloop`
-* This will install the LoopBack framework, the slc command-line and various tools such as Yeoman and Grunt*
+This will install the LoopBack framework, the slc command-line and various tools such as Yeoman and Grunt*
 * To start a new projet use `$ slc loopback`
 * We will need the MongoDB connector, please note that a compiler is require to produce bson `$ npm install loopback-connector-mongodb –save`
-* Configure MongoDB as datasource, use the loopback datasource generator that will write the settings in /server/datasources.json for you `$ slc loopback:datasource DB_name`
+* Configure MongoDB as datasource, use the loopback datasource generator that will write the settings in `/server/datasources.json` for you `$ slc loopback:datasource DB_name`
 * To run the app just hit `	$ slc run` or `	$ node .` if everthing went fine you should get this
 Browse your REST API at http://0.0.0.0:3000/explorer
 Web server listening at: http://0.0.0.0:3000/```
