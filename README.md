@@ -35,7 +35,7 @@ Here you'll see how to perform several queries.
 * Get the list of issues raised by a particular user.
 `http://127.0.0.1:3000/api/Citizens/{id}/issues`
 * Get the list of issues of a certain type.
-`http://127.0.0.1:3000/api/Issues?filter[where][category]=graffiti`
+`http://127.0.0.1:3000/api/Issues?filter[where][categoryId]={categoryId}`
 * Get the list of issues in a particular region.
 `http://127.0.0.1:3000/api/issues?filter[where][geoInfo][near]=lat,lng&filter[limit]=5`
 Use the limit filter to retrieve only the 5 first results
