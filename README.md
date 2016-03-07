@@ -38,7 +38,7 @@ Here you'll see how to perform several queries.
 `http://127.0.0.1:3000/api/Issues?filter[where][category]=graffiti`
 * Get the list of issues in a particular region.
 `http://127.0.0.1:3000/api/issues?filter[where][geoInfo][near]=lat,lng&filter[limit]=5`
-** Use the limit filter to retrieve only the 5 first results**
+Use the limit filter to retrieve only the 5 first results
 * Get the list of issues solved between two dates.
 `http://127.0.0.1:3000/api/Issues?filter[where][date][between][0]=YYYY-MM-DDT00:00:00.000Z&filter[where][date][between][1]=YYYY-MM-DD&filter[where][status]=solved`
 * Get the list of issues created between two dates that are still unresolved.
