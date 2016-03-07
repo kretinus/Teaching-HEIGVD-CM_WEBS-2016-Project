@@ -17,6 +17,7 @@ To run our projet, you need
 * Strongloop
 * A MongoDB database
 * Projet source: `git clone git://github.com/kretinus/Teaching-HEIGVD-CM_WEBS-2016-Project.git`
+* Feel free to use our MongoDB dump https://github.com/kretinus/Teaching-HEIGVD-CM_WEBS-2016-Project/blob/master/mongodump-iflux_Nicolas_Lukas.tar.gz
    
 ## Getting Started
 * Install StrongLoop `$ npm install -g strongloop`
