@@ -33,12 +33,12 @@ Web server listening at: http://0.0.0.0:3000/
 Here you'll see how to perform several queries.
 
 
-    Get the list of issues raised by a particular user.
-    Get the list of issues of a certain type.
-    Get the list of issues in a particular region.
-    Get the list of issues solved between two dates.
-    Get the list of issues created between two dates that are still unresolved.
-    Get the history of an issue (list of actions taken on the issue).
-    Get the list of users who have created most issues.
-    Get the list of users who have solved most issues.
-    Get the list of users who have the least assigned issues not yet solved or rejected.
+*Get the list of issues raised by a particular user.
+*Get the list of issues of a certain type.
+*Get the list of issues in a particular region.
+*Get the list of issues solved between two dates.
+*Get the list of issues created between two dates that are still unresolved.
+*Get the history of an issue (list of actions taken on the issue).
+*Get the list of users who have created most issues.
+*Get the list of users who have solved most issues.
+*Get the list of users who have the least assigned issues not yet solved or rejected.
